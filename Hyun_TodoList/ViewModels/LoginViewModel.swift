@@ -5,14 +5,21 @@
 //  Created by hyun on 2/6/24.
 //
 
-import SwiftUI
+import Foundation
 
-struct LoginViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class LoginViewModel: ObservableObject {
+    
+    @Published var email = ""
+    @Published var password = ""
+    
+    init() {}
+    
+    // 로그인 함수
+    func login() {
+        
     }
-}
-
-#Preview {
-    LoginViewModel()
+    
+    func validate() {
+        
+    }
 }

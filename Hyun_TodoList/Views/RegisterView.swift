@@ -20,16 +20,32 @@ struct RegisterView: View {
                 , subtitle: "Start organizing todo"
                 , angle: -15
                 , background: .orange)
+            .padding(.top, 50)
             
             Form {
                 TextField("Full Name", text: $name)
                     .textFieldStyle(DefaultTextFieldStyle())
+                    .autocorrectionDisabled()
+                
                 TextField("Email Address", text: $email)
                     .textFieldStyle(DefaultTextFieldStyle())
+                    .autocapitalization(.none)
+                    .autocorrectionDisabled()
+                
                 SecureField("Password", text: $password)
                     .textFieldStyle(DefaultTextFieldStyle())
                 
+                TLButton(
+                    title: "Create Account"
+                    , background: .green
+                ) {
+                   // action login
+                    
+                }
+                .padding()
+                
             }
+            .offset(y: -50)
             
             Spacer()
         }

@@ -8,11 +8,33 @@
 import SwiftUI
 
 struct TLButton: View {
+    let title: String
+    let background: Color
+    let action: () -> Void
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button {
+            // action
+            action()
+        } label: {
+            ZStack {
+                RoundedRectangle(cornerRadius: 10)
+                    .foregroundColor(background)
+                
+                Text(title)
+                    .foregroundColor(.white)
+                    .bold()
+            }
+        }
     }
 }
 
-#Preview {
-    TLButton()
+struct TLButton_Preview: PreviewProvider {
+    static var previews: some View {
+        TLButton(
+            title: "Value"
+            , background: .pink ) {
+                // action 
+            }
+    }
 }

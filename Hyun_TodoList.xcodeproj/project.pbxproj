@@ -55,6 +55,7 @@
 		D27E95C12B71336C0012B148 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27E95C02B71336C0012B148 /* RegisterViewModel.swift */; };
 		D27E95C32B71337F0012B148 /* ToDoListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27E95C22B71337F0012B148 /* ToDoListItemViewModel.swift */; };
 		D29992EF2B72639800A22A89 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29992EE2B72639800A22A89 /* HeaderView.swift */; };
+		D29992F12B73CB0000A22A89 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29992F02B73CB0000A22A89 /* TLButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		D27E95C02B71336C0012B148 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		D27E95C22B71337F0012B148 /* ToDoListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewModel.swift; sourceTree = "<group>"; };
 		D29992EE2B72639800A22A89 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		D29992F02B73CB0000A22A89 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				D27E95A92B7131D80012B148 /* LoginView.swift */,
 				D27E95AC2B7132140012B148 /* RegisterView.swift */,
 				D27E95AE2B7132540012B148 /* ToDoListItemView.swift */,
+				D29992F02B73CB0000A22A89 /* TLButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				D27E95C12B71336C0012B148 /* RegisterViewModel.swift in Sources */,
 				D27E95A62B7131900012B148 /* TodoListView.swift in Sources */,
 				D27E95AD2B7132140012B148 /* RegisterView.swift in Sources */,
+				D29992F12B73CB0000A22A89 /* TLButton.swift in Sources */,
 				D27E95A42B7131710012B148 /* ProfileView.swift in Sources */,
 				D27E95AF2B7132540012B148 /* ToDoListItemView.swift in Sources */,
 				D27E95582B7127E40012B148 /* Hyun_TodoListApp.swift in Sources */,
