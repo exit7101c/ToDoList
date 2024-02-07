@@ -16,14 +16,19 @@ struct LoginView: View {
         NavigationView {
             VStack {
                 // Header
-                HeaderView()
+                HeaderView(
+                    title: "To Do List"
+                    , subtitle: "Hyun"
+                    , angle: 15
+                    , background: .pink)
                 
                 // Login Form
                 Form {
                     TextField("Enail Address", text: $email)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .textFieldStyle(DefaultTextFieldStyle())
+                    
                     TextField("Password", text: $password)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .textFieldStyle(DefaultTextFieldStyle())
                     
                     Button {
                         
@@ -37,7 +42,9 @@ struct LoginView: View {
                                 .bold()
                         }
                     }
+                    .padding()
                 }
+                .offset(y: -100)
                 
                 // Create Account
                 VStack {
@@ -46,7 +53,7 @@ struct LoginView: View {
                     NavigationLink(
                         "Create An Account", destination: RegisterView())
                 }
-                .padding(.bottom, 50)
+                .padding(.bottom, 20)
                 Spacer()
             }
         }
@@ -54,6 +61,8 @@ struct LoginView: View {
     }
 }
 
-#Preview {
-    LoginView()
+struct LoginView_Preview: PreviewProvider {
+    static var previews: some View {
+        LoginView()
+    }
 }

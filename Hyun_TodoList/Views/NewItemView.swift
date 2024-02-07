@@ -13,6 +13,8 @@ struct NewItemView: View {
     }
 }
 
-#Preview {
-    NewItemView()
+struct NewItemView_Preview: PreviewProvider {
+    static var previews: some View {
+        NewItemView()
+    }
 }

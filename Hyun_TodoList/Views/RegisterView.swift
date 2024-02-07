@@ -8,11 +8,38 @@
 import SwiftUI
 
 struct RegisterView: View {
+    @State var name = ""
+    @State var email = ""
+    @State var password = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            // Header
+            HeaderView(
+                title: "Register"
+                , subtitle: "Start organizing todo"
+                , angle: -15
+                , background: .orange)
+            
+            Form {
+                TextField("Full Name", text: $name)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                TextField("Email Address", text: $email)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                SecureField("Password", text: $password)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                
+            }
+            
+            Spacer()
+        }
+        
     }
 }
 
-#Preview {
-    RegisterView()
+struct RegisterView_Preview: PreviewProvider {
+    static var previews: some View {
+        RegisterView()
+    }
 }
+
