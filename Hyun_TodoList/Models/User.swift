@@ -5,14 +5,14 @@
 //  Created by hyun on 2/6/24.
 //
 
-import SwiftUI
+import Foundation
 
-struct SwiftUIView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct User: Codable {
+    let id: String
+    let name: String
+    let email: String
+    let joined: TimeInterval    // 가입날짜
+    
 }
 
-#Preview {
-    SwiftUIView()
-}
+

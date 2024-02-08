@@ -24,6 +24,7 @@ struct LoginView: View {
                 // Login Form
                 Form {
                     
+                    // 로그인오류시 메시지출력
                     if !viewModel.errorMessage.isEmpty {
                         Text(viewModel.errorMessage)
                             .foregroundStyle(.red)
@@ -44,7 +45,7 @@ struct LoginView: View {
                     }
                     .padding()
                 }
-                .offset(y: -100)
+                .offset(y: -50)
                 
                 // Create Account
                 VStack {

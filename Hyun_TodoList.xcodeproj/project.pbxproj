@@ -56,6 +56,7 @@
 		D27E95C32B71337F0012B148 /* ToDoListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27E95C22B71337F0012B148 /* ToDoListItemViewModel.swift */; };
 		D29992EF2B72639800A22A89 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29992EE2B72639800A22A89 /* HeaderView.swift */; };
 		D29992F12B73CB0000A22A89 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29992F02B73CB0000A22A89 /* TLButton.swift */; };
+		D2C689922B7524BF007FF0EF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C689912B7524BF007FF0EF /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		D27E95C22B71337F0012B148 /* ToDoListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewModel.swift; sourceTree = "<group>"; };
 		D29992EE2B72639800A22A89 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		D29992F02B73CB0000A22A89 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
+		D2C689912B7524BF007FF0EF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 				D27E955B2B7127E50012B148 /* Assets.xcassets */,
 				D27E959C2B712DB90012B148 /* GoogleService-Info.plist */,
 				D27E95572B7127E40012B148 /* Hyun_TodoListApp.swift */,
+				D2C689912B7524BF007FF0EF /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				D27E95BF2B7133630012B148 /* LoginViewModel.swift in Sources */,
 				D27E95BD2B71335B0012B148 /* NewItemViewModel.swift in Sources */,
 				D27E95B42B7132F70012B148 /* ToDoListItem.swift in Sources */,
+				D2C689922B7524BF007FF0EF /* Extensions.swift in Sources */,
 				D27E95A82B7131C10012B148 /* NewItemView.swift in Sources */,
 				D27E95BB2B7133500012B148 /* ToDoListViewModel.swift in Sources */,
 				D27E95B92B7133400012B148 /* ProfielViewModel.swift in Sources */,
