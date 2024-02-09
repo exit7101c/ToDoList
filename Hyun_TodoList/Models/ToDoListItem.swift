@@ -5,14 +5,16 @@
 //  Created by hyun on 2/6/24.
 //
 
-import SwiftUI
+import Foundation
 
-struct ToDoListItem: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct ToDoListItem: Codable, Identifiable {
+    let id: String
+    let title: String
+    let dueDate: TimeInterval
+    let createDate: TimeInterval
+    var isDone: Bool
+    
+    mutating func setDone(_ state: Bool) {
+        isDone = state
     }
-}
-
-#Preview {
-    ToDoListItem()
 }
