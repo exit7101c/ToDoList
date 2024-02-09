@@ -181,9 +181,9 @@
 			children = (
 				D27E95B62B7133360012B148 /* MainViewModel.swift */,
 				D27E95B82B7133400012B148 /* ProflielViewModel.swift */,
-				D27E95BC2B71335B0012B148 /* NewItemViewModel.swift */,
 				D27E95BE2B7133630012B148 /* LoginViewModel.swift */,
 				D27E95C02B71336C0012B148 /* RegisterViewModel.swift */,
+				D27E95BC2B71335B0012B148 /* NewItemViewModel.swift */,
 				D27E95BA2B7133500012B148 /* ToDoListViewModel.swift */,
 				D27E95C22B71337F0012B148 /* ToDoListItemViewModel.swift */,
 			);
