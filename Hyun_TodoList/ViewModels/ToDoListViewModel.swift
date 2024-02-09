@@ -7,3 +7,11 @@
 
 
 import Foundation
+
+// ViewModel 아이템 목록
+// Primary
+class TodoListViewModel: ObservableObject {
+    
+    init() {}
+    
+}
