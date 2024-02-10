@@ -11,22 +11,30 @@ import SwiftUI
 
 struct TodoListView: View {
     @StateObject var viewModel = TodoListViewModel()
-    @FirestoreQuery var item: [ToDoListItem]
+    @FirestoreQuery var items: [ToDoListItem]
     
-    private let userId: String
     
     init(userId: String) {
-        self.userId = userId
+        
         // users/<id>/todos/<entries>
-        self._item = FirestoreQuery(collectionPath: "users/\(userId)/todos")
+        self._items = FirestoreQuery(
+            collectionPath: "users/\(userId)/todos")
     }
     
     var body: some View {
         NavigationView {
             VStack {
-                List(item) { item in
-                    Text(item.title)
+                List(items) { item in
+                    ToDoListItemView(item: item)
+                        .swipeActions {
+                            Button("삭제") {
+                                // 삭제..
+                                viewModel.delete(id: item.id)
+                            }
+                            .background(Color.red)
+                        }
                 }
+                .listStyle(PlainListStyle())
             }
             .navigationTitle("To Do List")
             .toolbar {

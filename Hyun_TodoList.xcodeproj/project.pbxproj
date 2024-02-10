@@ -166,11 +166,11 @@
 				D27E95592B7127E40012B148 /* MainView.swift */,
 				D27E95A32B7131710012B148 /* ProfileView.swift */,
 				D27E95A52B7131900012B148 /* TodoListView.swift */,
+				D27E95AE2B7132540012B148 /* ToDoListItemView.swift */,
 				D27E95A72B7131C10012B148 /* NewItemView.swift */,
 				D29992EE2B72639800A22A89 /* HeaderView.swift */,
 				D27E95A92B7131D80012B148 /* LoginView.swift */,
 				D27E95AC2B7132140012B148 /* RegisterView.swift */,
-				D27E95AE2B7132540012B148 /* ToDoListItemView.swift */,
 				D29992F02B73CB0000A22A89 /* TLButton.swift */,
 			);
 			path = Views;

@@ -27,7 +27,6 @@ struct NewItemView: View {
                 DatePicker("날짜", selection: $viewModel.dueDate)
                     .datePickerStyle(GraphicalDatePickerStyle())
                 
-                
                 // ButtonshowAlert
                 TLButton(
                     title: "저장"
